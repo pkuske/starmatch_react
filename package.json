@@ -13,9 +13,7 @@
     "prod:start": "cross-env NODE_ENV=production NODE_PATH=./build pm2 start -i max build/server/server.js --update-env --name star-matchProd",
     "prod:stop": "pm2 stop star-matchProd",
     "prod:reload": "pm2 reload --update-env star-matchProd",
-    "prod:logs": "pm2 logs --update-env star-matchProd",
-    "test": "jest",
-    "verify-tests": "jest --coverage"
+    "prod:logs": "pm2 logs --update-env star-matchProd"
   },
   "jest": {
     "modulePaths": [
@@ -56,16 +54,11 @@
   },
   "devDependencies": {
     "@babel/node": "^7.17.10",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^14.2.0",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^28.1.0",
     "concurrently": "^7.2.1",
     "eslint": "^8.16.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
-    "jest": "^28.1.0",
     "nodemon": "^2.0.16",
     "reactful": "^3.2.4"
   }
